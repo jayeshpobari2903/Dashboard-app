@@ -32,8 +32,8 @@ export class HoursPerProjectComponent implements AfterViewInit, OnChanges {
    */
   ngOnChanges() {
     if (this.chart && this.projects.length > 0) {
-      this.chart.labels = this.projects.map(p => p.name);
-      this.chart.datasets[0].data = this.projects.map(p => p.hours);
+      this.chart.data.labels = this.projects.map(p => p.name);
+      this.chart.data.datasets[0].data = this.projects.map(p => p.hours);
       this.chart.update();
     }
   }

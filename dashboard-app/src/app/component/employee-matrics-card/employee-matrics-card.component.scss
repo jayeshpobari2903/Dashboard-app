@@ -1,0 +1,30 @@
+.section-card {
+  padding: 30px;
+}
+
+.employee-item {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: row;
+}
+
+.employee-name {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.progress-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  min-width: 60px;
+  text-align: right;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  margin-right: 10px;
+  margin-top: 7px;
+}

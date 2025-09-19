@@ -1,0 +1,18 @@
+<mat-card class="dashboard-header mat-elevation-z4">
+  <mat-card-header>
+    <div class="header-content">
+      <div class="header-titles">
+        <mat-card-title>{{ clientName }}</mat-card-title>
+        <mat-card-subtitle>Timesheet Dashboard</mat-card-subtitle>
+      </div>
+    <mat-form-field appearance="outline">
+      <mat-label>Fiscal Period</mat-label>
+      <mat-select [value]="selectedYear" (selectionChange)="yearChange.emit($event.value)">
+        @for (year of fiscalYears; track year) {
+        <mat-option [value]="year">{{ year }}</mat-option>
+        }
+      </mat-select>
+    </mat-form-field>
+    </div>
+  </mat-card-header>
+</mat-card>

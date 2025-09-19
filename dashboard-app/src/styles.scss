@@ -1,0 +1,103 @@
+/* You can add global styles to this file, and also import other style files */
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.dashboard-container {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f2f5;
+  padding: 5px;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.dashboard-header {
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color: white;
+}
+
+.dashboard-header .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.dashboard-header mat-card-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.fiscal-period-selector {
+  width: 180px;
+}
+
+.section-card {
+  margin-bottom: 5px;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.employee-metrics-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+@media (min-width: 960px) {
+  .employee-metrics-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.employee-metric h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.employee-progress-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.employee-name {
+  flex-basis: 120px;
+  min-width: 120px;
+  font-weight: 500;
+}
+
+mat-progress-bar {
+  flex: 1;
+  height: 12px;
+  border-radius: 6px;
+}
+
+.progress-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  min-width: 60px;
+  text-align: right;
+}
+
+.no-data-message {
+  text-align: center;
+  color: #757575;
+  padding: 24px;
+  font-size: 1rem;
+  font-style: italic;
+}

@@ -1,0 +1,24 @@
+<mat-card class="section-card mat-elevation-z2">
+  <mat-card-title class="mb-10">{{ title }}</mat-card-title>
+  <mat-card-content>
+    @if (employees.length > 0) {
+    @for (emp of employees; track emp.name) {
+    <div class="employee-item">
+      <span class="employee-name">{{ emp.name }}</span>
+      <mat-progress-bar mode="determinate" class="progress-bar" [color]="type === 'hours' ? 'primary' : 'accent'"
+        [value]="type === 'hours' ? (emp.hours.tracked / emp.hours.expected) * 100 : (emp.timesheets.created / emp.timesheets.expected) * 100">
+      </mat-progress-bar>
+      <span class="progress-text timesheet-color">
+        {{ type === 'hours'
+        ? emp.hours.tracked + ' / ' + emp.hours.expected
+        : emp.timesheets.created + ' / ' + emp.timesheets.expected }}
+      </span>
+    </div>
+    }
+    } @else {
+    <ng-template #noData>
+      <div class="no-data">No employee data available</div>
+    </ng-template>
+    }
+  </mat-card-content>
+</mat-card>

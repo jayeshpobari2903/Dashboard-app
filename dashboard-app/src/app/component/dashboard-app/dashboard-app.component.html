@@ -1,0 +1,61 @@
+@if (dataLoaded()) {
+  <div class="dashboard-container">
+    <!-- Header -->
+    <app-dashboard-header 
+      [clientName]="clientData().clientName" 
+      [fiscalYears]="fiscalYears()"
+      [selectedYear]="selectedYear()" 
+      (yearChange)="changeYear($event)">
+    </app-dashboard-header>
+
+    <!-- Active Integrations -->
+    <mat-card class="section-card mat-elevation-z2">
+      <mat-card-title>Active Integrations</mat-card-title>
+      <mat-card-content class="integration-chips">
+        @for (integration of integrations(); track integration) {
+          <div 
+            class="integration-chip" 
+            [class.active]="integration === selectedIntegration()" 
+            (click)="changeIntegration(integration)">
+            {{ integration }}
+          </div>
+        }
+      </mat-card-content>
+    </mat-card>
+
+    <!-- Metrics cards -->
+    <div class="metrics-grid">
+      <app-matrics-card 
+        [title]="'Overall Hours'" 
+        [tracked]="overallHours().tracked" 
+        [expected]="overallHours().expected"
+        [color]="'#3f51b5'">
+      </app-matrics-card>
+
+      <app-matrics-card 
+        [title]="'Timesheet Summary'" 
+        [tracked]="timesheetSummary().created"
+        [expected]="timesheetSummary().expected" 
+        [color]="'#f44336'">
+      </app-matrics-card>
+    </div>
+
+    <!-- Employee breakdown && Hours per Project-->
+    <div class="metrics-grid">
+      <app-hours-per-project [projects]="projects()"></app-hours-per-project>
+      <app-employee-matrics-card 
+        [title]="'Hours per Employee'" 
+        [employees]="employees()" 
+        [type]="'hours'">
+      </app-employee-matrics-card>
+
+      <app-employee-matrics-card 
+        [title]="'Timesheets per Employee'" 
+        [employees]="employees()" 
+        [type]="'timesheets'">
+      </app-employee-matrics-card>
+    </div>
+  </div>
+} @else {
+  <div class="loading-container">Loading dashboard data...</div>
+}

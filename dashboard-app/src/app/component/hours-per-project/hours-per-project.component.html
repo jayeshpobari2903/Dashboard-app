@@ -1,0 +1,11 @@
+<mat-card class="section-card mat-elevation-z2">
+  <mat-card-title>Hours per Project</mat-card-title>
+  <mat-card-content>
+    <div *ngIf="projects.length > 0; else noData">
+      <canvas #barChart></canvas>
+    </div>
+    <ng-template #noData>
+      <div class="no-data">No project data available</div>
+    </ng-template>
+  </mat-card-content>
+</mat-card>

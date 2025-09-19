@@ -1,0 +1,85 @@
+{
+    "dashboardData" : [ 
+      {
+        
+        "clientName": "Enqcode.",
+        "fiscalYears": [2023, 2024, 2025, 2026, 2027],
+        "activeIntegrations": ["Jira", "Slack", "Asana", "Salesforce"],
+        "timesheetData": {
+          "2023": {
+            "hoursPerProject": [
+              { "name": "Project Alpha", "hours": 4500, "integration": "Jira" },
+              { "name": "Project Beta", "hours": 2200, "integration": "Asana" },
+              { "name": "Project Gamma", "hours": 750, "integration": "Salesforce" },
+              { "name": "Project Delta", "hours": 5500, "integration": "Slack" }
+            ],
+            "employees": [
+              { "name": "Akash L.", "hours": { "tracked": 120, "expected": 140 }, "timesheets": { "created": 12, "expected": 14 }, "integration": "Jira" },
+              { "name": "Jayesh R.", "hours": { "tracked": 110, "expected": 140 }, "timesheets": { "created": 11, "expected": 14 }, "integration": "Asana" },
+              { "name": "kaushal P.", "hours": { "tracked": 80, "expected": 90 }, "timesheets": { "created": 8, "expected": 9 }, "integration": "Jira" },
+              { "name": "mtavethiy S.", "hours": { "tracked": 50, "expected": 70 }, "timesheets": { "created": 5, "expected": 7 }, "integration": "Slack" }
+            ]
+          },
+          "2024": {
+            "hoursPerProject": [
+              { "name": "Project Alpha", "hours": 6200, "integration": "Jira" },
+              { "name": "Project Beta", "hours": 3100, "integration": "Asana" },
+              { "name": "Project Gamma", "hours": 600, "integration": "Salesforce" },
+              { "name": "Project Delta", "hours": 5500, "integration": "Slack" }
+            ],
+            "employees": [
+              { "name": "Akash L.", "hours": { "tracked": 135, "expected": 150 }, "timesheets": { "created": 13, "expected": 15 }, "integration": "Jira" },
+              { "name": "Jayesh R.", "hours": { "tracked": 125, "expected": 150 }, "timesheets": { "created": 12, "expected": 15 }, "integration": "Asana" },
+              { "name": "kaushal P.", "hours": { "tracked": 95, "expected": 100 }, "timesheets": { "created": 9, "expected": 10 }, "integration": "Jira" },
+              { "name": "mtavethiy S.", "hours": { "tracked": 65, "expected": 80 }, "timesheets": { "created": 6, "expected": 8 }, "integration": "Slack" }
+            ]
+          },
+          "2025": {
+            "hoursPerProject": [
+              { "name": "Project Alpha", "hours": 8500, "integration": "Salesforce" },
+              { "name": "Project Beta", "hours": 2500, "integration": "Asana" },
+              { "name": "Project Delta", "hours": 7800, "integration": "Jira" },
+              { "name": "Project Epsilon", "hours": 4200, "integration": "Slack" }
+            ],
+            "employees": [
+              { "name": "Akash L.", "hours": { "tracked": 150, "expected": 160 }, "timesheets": { "created": 15, "expected": 16 }, "integration": "Jira" },
+              { "name": "Jayesh R.", "hours": { "tracked": 130, "expected": 160 }, "timesheets": { "created": 13, "expected": 16 }, "integration": "Asana" },
+              { "name": "kaushal P.", "hours": { "tracked": 105, "expected": 110 }, "timesheets": { "created": 10, "expected": 11 }, "integration": "Jira" },
+              { "name": "mtavethiy S.", "hours": { "tracked": 80, "expected": 90 }, "timesheets": { "created": 8, "expected": 9 }, "integration": "Slack" },
+              { "name": "Leo R.", "hours": { "tracked": 115, "expected": 120 }, "timesheets": { "created": 11, "expected": 12 }, "integration": "Asana" }
+            ]
+          },
+          "2026": {
+            "hoursPerProject": [
+              { "name": "Project Alpha", "hours": 7200, "integration": "Slack" },
+              { "name": "Project Zeta", "hours": 9500, "integration": "Jira" },
+              { "name": "Project Epsilon", "hours": 5100, "integration": "Asana" },
+              { "name": "Project Alpha", "hours": 8500, "integration": "Salesforce" }
+            ],
+            "employees": [
+              { "name": "Jayesh R.", "hours": { "tracked": 140, "expected": 170 }, "timesheets": { "created": 14, "expected": 17 }, "integration": "Jira" },
+              { "name": "Akash L.", "hours": { "tracked": 150, "expected": 170 }, "timesheets": { "created": 15, "expected": 17 }, "integration": "Asana" },
+              { "name": "kaushal P.", "hours": { "tracked": 110, "expected": 120 }, "timesheets": { "created": 11, "expected": 12 }, "integration": "Jira" },
+              { "name": "Miriam W.", "hours": { "tracked": 75, "expected": 100 }, "timesheets": { "created": 7, "expected": 10 }, "integration": "Slack" },
+              { "name": "mtavethiy S.", "hours": { "tracked": 130, "expected": 140 }, "timesheets": { "created": 13, "expected": 14 }, "integration": "Asana" }
+            ]
+          },
+          "2027": {
+            "hoursPerProject": [
+              { "name": "Project Alpha", "hours": 9800, "integration": "Slack" },
+              { "name": "Project Zeta", "hours": 11500, "integration": "Jira" },
+              { "name": "Project Epsilon", "hours": 6200, "integration": "Asana" },
+              { "name": "Project Omega", "hours": 3500, "integration": "Salesforce" }
+            ],
+            "employees": [
+              { "name": "Akash L.", "hours": { "tracked": 175, "expected": 180 }, "timesheets": { "created": 17, "expected": 18 }, "integration": "Jira" },
+              { "name": "kaushal P.", "hours": { "tracked": 160, "expected": 180 }, "timesheets": { "created": 16, "expected": 18 }, "integration": "Asana" },
+              { "name": "Gavin L.", "hours": { "tracked": 125, "expected": 130 }, "timesheets": { "created": 12, "expected": 13 }, "integration": "Jira" },
+              { "name": "mtavethiy S.", "hours": { "tracked": 100, "expected": 110 }, "timesheets": { "created": 10, "expected": 11 }, "integration": "Slack" },
+              { "name": "Leo R.", "hours": { "tracked": 150, "expected": 150 }, "timesheets": { "created": 15, "expected": 15 }, "integration": "Asana" }
+            ]
+          }
+        }
+    }
+    ]
+}
